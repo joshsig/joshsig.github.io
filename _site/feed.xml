@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/fucc/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/fucc/" rel="alternate" type="text/html" /><updated>2022-10-31T13:34:14-05:00</updated><id>http://localhost:4000/fucc/feed.xml</id><title type="html">Josh Sigurdson</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">README</title><link href="http://localhost:4000/fucc/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/fucc/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/fucc/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/joshsig.github.io/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/joshsig.github.io/" rel="alternate" type="text/html" /><updated>2022-10-31T14:01:16-05:00</updated><id>http://localhost:4000/joshsig.github.io/feed.xml</id><title type="html">Josh Sigurdson</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">README</title><link href="http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
 
 <p>How to create and host your resume on a website using a software stack.</p>
 
 <ol>
-  <li><a href="#instructions-pencil2">Instructions</a>
+  <li><a href="#instructions">Instructions</a>
     <ol>
       <li><a href="">Configuration</a></li>
       <li><a href="">Installation</a></li>
@@ -19,11 +19,16 @@
   <li><a href="">Changelog</a></li>
 </ol>
 
-<h2 id="instructions-pencil2">Instructions :pencil2:</h2>
+<h2 id="instructions">Instructions</h2>
 <p>We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.</p>
 
 <ul>
-  <li>Lets begin by installing a markdown and code editor. Personally I like to use <a href="https://code.visualstudio.com/download">VS Code</a>. You can use any editor of your choice although. <a href="https://atom.io/">Atom</a> is an editor specifically for Markdown. <a href="https://vimhelp.org/">Vim</a> is an option for Markdown as well a code, not for the faint of heart.</li>
+  <li>
+    <p>A mark-up language is very useful to learn and use. In Andrew Etter’s Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</p>
+  </li>
+  <li>
+    <p>Lets begin by installing a markdown and code editor. Personally I like to use <a href="https://code.visualstudio.com/download">VS Code</a>, you can use it to write Markdown and program your site as well. You can use any editor of your choice although. <a href="https://atom.io/">Atom</a> is an editor specifically for Markdown. <a href="https://vimhelp.org/">Vim</a> is an option for Markdown as well a code, not for the faint of heart.</p>
+  </li>
 </ul>
 
 <p><img src="./" alt="vscode" /></p>
@@ -75,7 +80,18 @@ github_username:  your-github
 <h3 id="setup-repository">Setup Repository</h3>
 <p>Navigate to <a href="https://github.com/">Github</a> and create a repository.</p>
 
-<p><img src="https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&amp;rid=giphy.gif&amp;ct=g" alt="Github Repository gif" /></p>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry><entry><title type="html">Resume</title><link href="http://localhost:4000/fucc/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/fucc/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/fucc/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
+<p><img src="https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&amp;rid=giphy.gif&amp;ct=g" alt="Github Repository gif" /></p>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 33 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 39 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry><entry><title type="html">Resume</title><link href="http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/joshsig.github.io/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
 
 <h4 id="joshuasigurdsongmailcom">joshuasigurdson@gmail.com</h4>
 <h4 id="sigurd35myumanitobaca">sigurd35@myumanitoba.ca</h4>
