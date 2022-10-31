@@ -22,7 +22,7 @@ title: Josh Sigurdson
 email: sigurd35@myumanitoba.ca
 description: >- # this means to ignore newlines until "baseurl:"
   Computer Science & Management student at University of Manitoba!
-baseurl: "/joshsig.github.io/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jashsig
 github_username: joshsig
