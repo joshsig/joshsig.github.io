@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+  <link href="http://gmpg.org/xfn/11" rel="profile">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <!-- Enable responsiveness on mobile devices-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+
+  <title>
+    
+      README &middot; Josh Sigurdson
+    
+  </title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="/fucc/public/css/poole.css">
+  <link rel="stylesheet" href="/fucc/public/css/syntax.css">
+  <link rel="stylesheet" href="/fucc/public/css/hyde.css">
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
+
+  <!-- Icons -->
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/fucc/public/apple-touch-icon-144-precomposed.png">
+                                 <link rel="shortcut icon" href="/fucc/public/favicon.ico">
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">
+</head>
+
+
+  <body>
+
+    <div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar">
+      <h1>
+        <a href="/fucc/"> Josh Sigurdson </a>
+      </h1>
+      <p class="lead">Computer Science & Management student at University of Manitoba!</p>
+
+      <nav class="sidebar-nav">
+        <a class="sidebar-nav-item" href="https://www.github.com/joshsig"
+          >GitHub</a
+        >
+        <a href="/fucc/jekyll/update/2022/10/31/resume.html">Resume</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
+
+    <div class="content container">
+      <div class="post">
+  <h1 class="post-title">README</h1>
+  <span class="post-date">31 Oct 2022</span>
+  <h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
+
+<p>How to create and host your resume on a website using a software stack.</p>
+
+<ol>
+  <li><a href="#instructions-pencil2">Instructions</a>
+    <ol>
+      <li><a href="">Configuration</a></li>
+      <li><a href="">Installation</a></li>
+      <li><a href="">Operation</a></li>
+    </ol>
+  </li>
+  <li><a href="#create-your-resume-using-markdown">Create your Resume using Markdown</a></li>
+  <li><a href="">Copyright</a></li>
+  <li><a href="">Known-Bugs</a></li>
+  <li><a href="">Troubleshooting</a></li>
+  <li><a href="">Credits-and-Acknowledgements</a></li>
+  <li><a href="">Contact</a></li>
+  <li><a href="">Changelog</a></li>
+</ol>
+
+<h2 id="instructions-pencil2">Instructions :pencil2:</h2>
+<p>We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.</p>
+
+<ul>
+  <li>Lets begin by installing a markdown and code editor. Personally I like to use <a href="https://code.visualstudio.com/download">VS Code</a>. You can use any editor of your choice although. <a href="https://atom.io/">Atom</a> is an editor specifically for Markdown. <a href="https://vimhelp.org/">Vim</a> is an option for Markdown as well a code, not for the faint of heart.</li>
+</ul>
+
+<p><img src="./" alt="vscode" /></p>
+
+<ul>
+  <li>
+    <p>You will also need some familiarity with Markdown to create our resume. Markdown is an easy-to-read, easy-to-write language for formatting plain text. I will be using GitHub Flavoured Markdown for this demonstration. If you are unfamiliar with Markdown reference <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">here</a> for basic syntax.</p>
+  </li>
+  <li>
+    <p>We will need to use the command line to install some dependencies for hosting our website. We are going to need Jekyll to host our website, and in order to get Jekyll we need Ruby (the language Jekyll is written in).</p>
+    <ul>
+      <li>Install/Upgrade <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby</a></li>
+    </ul>
+
+    <p>Run this command <code class="language-plaintext highlighter-rouge">ruby -v</code> to ensure ruby has been installed on your system.</p>
+
+    <p>Follow set-up instructions for <a href="https://jekyllrb.com/docs/installation/">Jekyll</a> and <a href="https://jekyllrb.com/docs/ruby-101/#gems">Bundler</a></p>
+    <ul>
+      <li>Install Jekyll: <code class="language-plaintext highlighter-rouge">gem install jekyll bundler</code></li>
+    </ul>
+  </li>
+</ul>
+
+<p>You will also need a <a href="https://github.com/">Github</a> account as well as <a href="https://desktop.github.com/">Git Desktop</a>! Your Github account will allow you to store all your code in a repository online for free! We can also use Git Desktop to connect the files on your computer to the repository very easily.</p>
+
+<h2 id="create-your-resume-using-markdown">Create your Resume using Markdown</h2>
+
+<p>Using Visual Studio Code, open a folder and create a new file. Name this file <code class="language-plaintext highlighter-rouge">resume.md</code>. Now that you have created a markdown file you have the ability to start writing your resume! Add your name, experience, education, etc. until you have a resume you want to share with the world! Reference <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">here</a> for any formatting needs.</p>
+
+<h2 id="running-locally">Running Locally</h2>
+<p>Compile and run your <code class="language-plaintext highlighter-rouge">Jekyll</code> website on your local network.</p>
+<ol>
+  <li>Ensure jekyll is installed: <code class="language-plaintext highlighter-rouge">jekyll -v</code></li>
+  <li>Create your jekyll site: <code class="language-plaintext highlighter-rouge">jekyll new my-resume-site</code></li>
+  <li>Navigate to the folder: <code class="language-plaintext highlighter-rouge">cd my-resume-site</code></li>
+  <li>To host your website on your local network run, <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+</ol>
+
+<h2 id="settings">Settings</h2>
+<p>You will want to customize the <code class="language-plaintext highlighter-rouge">_config.yml</code> to your own information.</p>
+<h3 id="site-settings">Site Settings</h3>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>title: Your awesome title
+email: your-email@example.com
+description: your-description
+twitter_username: your-twitter-username
+github_username:  your-github
+</code></pre></div></div>
+
+<h3 id="setup-repository">Setup Repository</h3>
+<p>Navigate to <a href="https://github.com/">Github</a> and create a repository.</p>
+
+<p><img src="https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&amp;rid=giphy.gif&amp;ct=g" alt="Github Repository gif" /></p>
+
+
+</div>
+
+<div class="related">
+  <h2>Related Posts</h2>
+  <ul class="related-posts">
+    
+      <li>
+        <h3>
+          <a href="/jekyll/update/2022/10/31/resume.html">
+            Resume
+            <small>31 Oct 2022</small>
+          </a>
+        </h3>
+      </li>
+    
+  </ul>
+</div>
+
+    </div>
+
+  </body>
+</html>
