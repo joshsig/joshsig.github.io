@@ -4,14 +4,18 @@ How to create and host your resume on a website using a software stack.
 
 - [How to Host a Resume on GitHub Pages](#how-to-host-a-resume-on-github-pages)
   - [Instructions](#instructions)
+    - [Prerequisites](#prerequisites)
     - [Configuration](#configuration)
     - [Installation](#installation)
-  - [Create your Resume using Markdown](#create-your-resume-using-markdown)
-  - [Running Locally](#running-locally)
+    - [Operating](#operating)
   - [Settings](#settings)
-    - [Site Settings](#site-settings)
+  - [Create your Resume using Markdown](#create-your-resume-using-markdown)
+  - [Authors and Acknowledgements](#authors-and-acknowledgements)
+  - [FAQs](#faqs)
 
 ## Instructions
+
+### Prerequisites
 We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.
 
  - A mark-up language is very useful to learn and use. In Andrew Etter's Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet[^1]. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used[^2]. 
@@ -29,8 +33,8 @@ Navigate to [Github](https://github.com/) and create a repository.
 
 Open Git Desktop and clone this newly created repository. Using Git Desktop we can now keep our 
 
- ### Configuration
-Create a folder in your documents, entitle it `GitHub`. We will use this folder to keep our files for this project up to date and hosted via GitHub Pages. Using Git Desktop
+### Configuration
+Create a folder in your documents, entitle it `GitHub`. We will use this folder to keep our files for this project up to date and hosted via GitHub Pages. 
 
 ### Installation
  - We will need to use the command line to install some dependencies for hosting our website. We are going to need Jekyll to host our website, and in order to get Jekyll we need Ruby (the language Jekyll is written in).
@@ -46,6 +50,21 @@ Install Jekyll:
   gem install jekyll bundler
   ``` 
 
+### Operating
+Using Git Desktop we can keep our site up to date. Git Desktop allows you to fetch from your repository's *origin* (the state when you start working on your files) and after working on them on your device you can then *push* (update) the work you have done to the repository.
+
+Compile and run your `Jekyll` website.
+1. Ensure jekyll is installed: `jekyll -v`
+2. Create your jekyll site in your GitHub folder: `jekyll new [your-github-username].github.io`
+3. Navigate to the folder: `cd [your-github-username].github.io`
+4. Run `bundle add webrick`
+5. To host your website on your local network run, `bundle exec jekyll serve`
+
+## Settings
+You will want to customize the `_config.yml` to your own information.
+
+Here is mine:
+![config.yml](https://i.gyazo.com/aee368ab4371bbc4bbf5679cac59aa2d.png)
 
 
 ## Create your Resume using Markdown
@@ -54,23 +73,22 @@ Familiarity with Markdown is needed to create a resume. Markdown is an easy-to-r
 
 Using Visual Studio Code, open a folder and create a new file. Name this file `resume.md`. Now that you have created a markdown file you have the ability to start writing your resumaccounte! Add your name, experience, education, etc. until you have a resume you want to share with the world! Reference [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for any formatting needs.
 
-## Running Locally
-Compile and run your `Jekyll` website.
-1. Ensure jekyll is installed: `jekyll -v`
-2. Create your jekyll site: `jekyll new my-resume-site`
-3. Navigate to the folder: `cd my-resume-site`
-4. To host your website on your local network run, `bundle exec jekyll serve`
 
-## Settings
-You will want to customize the `_config.yml` to your own information.
-### Site Settings
-```
-title: Your awesome title
-email: your-email@example.com
-description: your-description
-twitter_username: your-twitter-username
-github_username:  your-github
-```
+## Authors and Acknowledgements
+
+[Josh Sigurdson](https://github.com/joshsig)
+
+Thank you to my group mates:
+- [x]()
+- [y]()s
+  
+for their help with revision.
+
+Thank you to [Mdo](https://twitter.com/mdo) for his creation of [Poole](https://github.com/poole) & [Hyde](https://github.com/poole/hyde).
+
+
+## FAQs
+
 
 [^1]: Andrew Etter - Modern Technical Writing, 33
 [^2]: Andrew Etter - Modern Technical Writing, 39
