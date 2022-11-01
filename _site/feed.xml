@@ -1,173 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-10-31T20:04:55-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Josh Sigurdson</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">README</title><link href="http://localhost:4000/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T09:07:34-07:00</published><updated>2022-10-31T09:07:34-07:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
-
-<p>How to create and host your resume on a website using a software stack consisting of Markdown, Visual Studio Code, GitHub Pages, and Jekyll.</p>
-
-<ul>
-  <li><a href="#prerequisites">Prerequisites</a></li>
-  <li><a href="#instructions">Instructions</a>
-    <ul>
-      <li><a href="#1-github-pages">GitHub Pages</a></li>
-      <li><a href="#2-host-your-site">Host Your Site</a></li>
-      <li><a href="#3-more-resources">More Resources</a></li>
-    </ul>
-  </li>
-  <li><a href="#authors-and-acknowledgements">Authors and Acknowledgements</a></li>
-  <li><a href="#faqs">FAQs</a></li>
-</ul>
-
-<h2 id="prerequisites">Prerequisites</h2>
-<p>We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.</p>
-
-<ul>
-  <li>Markdown Editor
-    <ul>
-      <li>A mark-up language is very useful to learn and use. In Andrew Etter’s Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</li>
-      <li>Personally I like to use <a href="https://code.visualstudio.com/download">VS Code</a>, you can use it to write Markdown and program your site as well. You can use any editor of your choice although. <a href="https://atom.io/">Atom</a> is an editor specifically for Markdown. <a href="https://vimhelp.org/">Vim</a> is an option for Markdown as well a code, not for the faint of heart.</li>
-      <li>I have provided a Markdown tutorial in <a href="#3-more-resources">More Resources</a>.</li>
-    </ul>
-  </li>
-  <li>GitHub Account
-    <ul>
-      <li>You will need to have a GitHub account. Your Github will allow you to store all your code in a repository (repo) online for free! Sign up <a href="https://github.com/">here</a>. This will also give us access to use <a href="https://pages.github.com/">GitHub Pages</a> (more on this later).</li>
-    </ul>
-  </li>
-  <li>Git &amp; Git Desktop
-    <ul>
-      <li>You will need to install <a href="https://git-scm.com/downloads">Git</a>.</li>
-      <li>Andrew Etter prefers to use a GUI system such as this, it is better for basic everyday operations<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. More advanced functionality can be accessed through command line.</li>
-      <li>Use <a href="https://desktop.github.com/">Git Desktop</a> to connect the files on your computer to the repository. Connect your account and clone <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code> repository. This will allow you to push your data to the repo. <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop">Reference here</a> for more information on how to use Git Desktop.</li>
-    </ul>
-  </li>
-  <li>Resume in Markdown
-    <ul>
-      <li>I have provided <a href="A2/resume.md">my resume</a> for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. <img src="https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif" alt="resumegif" /></li>
-    </ul>
-  </li>
-  <li>Ruby &amp; Jekyll
-    <ul>
-      <li>We will also need to install these to run our website. I provided instructions to get them <a href="#2-host-your-site">here</a>.</li>
-    </ul>
-  </li>
-</ul>
-
-<h2 id="instructions">Instructions</h2>
-<h3 id="1-github-pages">1. GitHub Pages</h3>
-
-<p>Repository Creation</p>
-<ul>
-  <li>Navigate to <a href="https://github.com/">Github</a> and create a repository. <strong>Name this repo <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code>.</strong> 
-<img src="https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&amp;rid=giphy.gif&amp;ct=g" alt="Github Repository gif" /></li>
-</ul>
-
-<p>Using Git Desktop, clone [your-github-name].github.io repository to your computer’s drive.</p>
-
-<h3 id="2-host-your-site">2. Host Your Site</h3>
-<p>Hosting a static website allows you to easily keep your content up to date and on a website anybody can access. We will be using Jekyll because of its popularity<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup>. Andrew Etter states that static websites are “really just a collection of lightweight markup files that you can edit using your favorite text editor.”<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup>.</p>
-
-<ol>
-  <li>Ruby Install
-    <ul>
-      <li>Go to <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby’s Website</a> and follow the guide on how to get it onto your system.</li>
-      <li>Run the command: <code class="language-plaintext highlighter-rouge">ruby -v</code> to ensure ruby has been installed.</li>
-    </ul>
-  </li>
-  <li>Jekyll Install
-    <ul>
-      <li>Then go to Jekyll’s <a href="https://jekyllrb.com/docs/">Quickstart Guide</a> and  <a href="https://jekyllrb.com/docs/installation/">Installation Guide</a> and follow the guide on how to install it for your operation system.</li>
-      <li>Run the command: <code class="language-plaintext highlighter-rouge">jekyll -v</code> to ensure Jekyll has been installed.</li>
-    </ul>
-  </li>
-  <li>Initialize Site
-    <ul>
-      <li>To start your site, use the command line to navigate to your directory containing your repository. For example: <code class="language-plaintext highlighter-rouge">cd Documents/GitHub/[your-github-name].github.io</code></li>
-      <li>Then run the command: <code class="language-plaintext highlighter-rouge">jekyll new [your-site-name]</code></li>
-      <li>Navigate into that newly created folder with: <code class="language-plaintext highlighter-rouge">cd [your-site-name]</code>
-        <ul>
-          <li>You will likely need to add <code class="language-plaintext highlighter-rouge">webrick</code>, so run: <code class="language-plaintext highlighter-rouge">bundle add webrick</code> and <code class="language-plaintext highlighter-rouge">bundle install</code></li>
-        </ul>
-      </li>
-      <li>To run your newly created site: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
-      <li>The LocalHost will be provided to you in your terminal, open it in your web browser, and BOOM your website is now created!</li>
-    </ul>
-  </li>
-  <li>Customize
-    <ul>
-      <li>To add your resume to the site take your <strong>resume.md</strong> file and copy it to the <code class="language-plaintext highlighter-rouge">_posts</code> folder within the <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code> folder.</li>
-      <li>You will then have to append the file name with the date in the format of <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-resume.md</code></li>
-      <li>Then add to the top of your resume markdown file. This is so the Jekyll compiler can find and list your resume as a post.
-        <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
-layout: post
-title:  "Resume"
-date:   [current date + time]
-categories: jekyll update
----
-</code></pre></div>        </div>
-      </li>
-    </ul>
-  </li>
-  <li>Finalize
-    <ul>
-      <li>Then using Git Desktop, push your data to your repository and go to the URL <code class="language-plaintext highlighter-rouge">https://[your-github-name].github.io</code> and your website with your resume listed as a post will be there!</li>
-    </ul>
-  </li>
-</ol>
-
-<h3 id="3-more-resources">3. More Resources</h3>
-
-<ol>
-  <li>This <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown Tutorial</a> has helped me lots when learning Markdown.</li>
-  <li>Andrew Etter’s <em>Modern Technical Writing</em> is a good read. You can find it <a href="https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">here</a> on Amazon.</li>
-  <li>Learning Git is essential for us Computer Science students. Although Git Desktop is easy to use and quick to learn. Learning command line Git can greatly improve your Git proficiency. <a href="https://www.atlassian.com/git/tutorials">This tutorial</a> goes very indepth.</li>
-</ol>
-
-<h2 id="authors-and-acknowledgements">Authors and Acknowledgements</h2>
-
-<p><a href="https://github.com/joshsig">Josh Sigurdson</a></p>
-
-<p>Thank you to my group mates:</p>
-<ul>
-  <li><a href="">x</a></li>
-  <li><a href="">y</a></li>
-</ul>
-
-<p>for their help with revision of this README.</p>
-
-<p>Thank you to <a href="https://twitter.com/mdo">Mdo</a> for his creation of the templates I utilized for my personal site <a href="https://github.com/poole">Poole</a> &amp; <a href="https://github.com/poole/hyde">Hyde</a>.</p>
-
-<h2 id="faqs">FAQs</h2>
-
-<p>Q: Why is Markdown better than a word processor?</p>
-
-<p>A:</p>
-
-<p>Q: Why is my resume not showing up?</p>
-
-<p>A: There can be many reasons for this. Ensure that the name of your <code class="language-plaintext highlighter-rouge">resume.md</code> file has the prefix of a previous date and time. Dates in the future will not be displayed. Also ensure the file has the correct prefix:</p>
-<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>layout: post
-title:  "Resume"
-date:   [current date + time]
-categories: jekyll update
-</code></pre></div></div>
-
-<div class="footnotes" role="doc-endnotes">
-  <ol>
-    <li id="fn:1" role="doc-endnote">
-      <p>Andrew Etter - Modern Technical Writing, 33 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:2" role="doc-endnote">
-      <p>Andrew Etter - Modern Technical Writing, 39 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:3" role="doc-endnote">
-      <p>Andrew Etter - Modern Technical Writing, 46 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:4" role="doc-endnote">
-      <p>Andrew Etter - Modern Technical Writing, 51 <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-    <li id="fn:5" role="doc-endnote">
-      <p>Andrew Etter - Modern Technical Writing, 52 <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
-    </li>
-  </ol>
-</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry><entry><title type="html">Resume</title><link href="http://localhost:4000/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T09:07:34-07:00</published><updated>2022-10-31T09:07:34-07:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-11-01T18:20:11-05:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Josh Sigurdson</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">Resume</title><link href="http://localhost:4000/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
 
 <h4 id="joshuasigurdsongmailcom">joshuasigurdson@gmail.com</h4>
 <h4 id="sigurd35myumanitobaca">sigurd35@myumanitoba.ca</h4>
@@ -177,7 +8,7 @@ categories: jekyll update
 <hr />
 
 <h2 id="about-me"><b>About me</b></h2>
-<p>Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning, with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.</p>
+<p>Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.</p>
 
 <hr />
 <h2 id="technical-skills"><b>Technical Skills</b></h2>
@@ -295,4 +126,187 @@ categories: jekyll update
   <li>Inna Granovsky - (204) 990-3616</li>
   <li>Jeff McWhinney - (204) 583-8193</li>
   <li>Kevin Dzioba - (204) 890-7099</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Joshua Sigurdson]]></summary></entry></feed>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Joshua Sigurdson]]></summary></entry><entry><title type="html">README</title><link href="http://localhost:4000/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
+
+<p>How to create and host your resume on a website using a software stack consisting of Markdown, Visual Studio Code, GitHub Pages, and Jekyll.</p>
+
+<ul>
+  <li><a href="#prerequisites">Prerequisites</a></li>
+  <li><a href="#instructions">Instructions</a>
+    <ul>
+      <li><a href="#1-github-pages">GitHub Pages</a></li>
+      <li><a href="#2-host-your-site">Host Your Site</a>
+        <ul>
+          <li><a href="#1-ruby-install">Ruby Install</a></li>
+          <li><a href="#2-jekyll-install">Jekyll Install</a></li>
+          <li><a href="#3-initialize-site">Initialize Site</a></li>
+          <li><a href="#4-customize">Customize</a></li>
+          <li><a href="#5-finalize">Finalize</a></li>
+        </ul>
+      </li>
+      <li><a href="#3-more-resources">More Resources</a></li>
+    </ul>
+  </li>
+  <li><a href="#authors-and-acknowledgements">Authors and Acknowledgements</a></li>
+  <li><a href="#faqs">FAQs</a></li>
+</ul>
+
+<p><img src="https://programmerhumor.io/wp-content/uploads/2022/10/programmerhumor-io-debugging-memes-testing-memes-4ada90d8c3f5fce.jpg" alt="funnies" /></p>
+
+<h2 id="prerequisites">Prerequisites</h2>
+<p>We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.</p>
+
+<ul>
+  <li>Markdown Editor
+    <ul>
+      <li>A mark-up language is very useful to learn and use. In Andrew Etter’s <em>Modern Technical Writing</em>, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through the Internet<sup id="fnref:1" role="doc-noteref"><a href="#fn:1" class="footnote" rel="footnote">1</a></sup>. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used<sup id="fnref:2" role="doc-noteref"><a href="#fn:2" class="footnote" rel="footnote">2</a></sup>.</li>
+      <li>Personally, I like to use <a href="https://code.visualstudio.com/download">VS Code</a>, you can use it to write Markdown and program your site as well. You can use any editor of your choice. <a href="https://atom.io/">Atom</a> is common option for an editor. <a href="https://vimhelp.org/">Vim</a> is an option for Markdown as well a code editor, not for the faint of heart.</li>
+      <li>I have provided a Markdown tutorial in <a href="#3-more-resources">More Resources</a>.</li>
+    </ul>
+  </li>
+  <li>GitHub Account
+    <ul>
+      <li>You will need to have a GitHub account. Your Github will allow you to store all your code in a repository (repo) online for free! Sign up <a href="https://github.com/">here</a>. This will also give us access to use <a href="https://pages.github.com/">GitHub Pages</a> (more on this later).</li>
+    </ul>
+  </li>
+  <li>Git &amp; Git Desktop
+    <ul>
+      <li>You will need to install <a href="https://git-scm.com/downloads">Git</a>.</li>
+      <li>Use <a href="https://desktop.github.com/">Git Desktop</a> to connect the files on your computer to the repository. Connect your account and clone <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code> repository. This will allow you to push your data to the repo. <a href="https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop">Reference here</a> for more information on how to use Git Desktop.</li>
+      <li>Andrew Etter prefers to use a GUI system such as Git Desktop. It is better for basic everyday operations<sup id="fnref:3" role="doc-noteref"><a href="#fn:3" class="footnote" rel="footnote">3</a></sup>. More advanced functionality can be accessed through command line.</li>
+    </ul>
+  </li>
+  <li>Resume in Markdown
+    <ul>
+      <li>I have provided <a href="/resume.md">my resume</a> for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. <img src="https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif" alt="resumegif" /></li>
+    </ul>
+  </li>
+  <li>Ruby &amp; Jekyll
+    <ul>
+      <li>We will also need to install these to run our website. I provided instructions to get them <a href="#2-host-your-site">here</a>.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="instructions">Instructions</h2>
+<h3 id="1-github-pages">1. GitHub Pages</h3>
+<p>GitHub Pages is great for its, “speed, simplicity, portability and security.”<sup id="fnref:4" role="doc-noteref"><a href="#fn:4" class="footnote" rel="footnote">4</a></sup> We have no need to install anything to utilize this tool, so generating this site is as easy as moving a directory! We will be able to test this locally using the command line (more later), then using GitHub Desktop deploy it to the repository. Now the webpage will be generated. You will see why Andrew Etter has an irrational bias towards static websites.<sup id="fnref:5" role="doc-noteref"><a href="#fn:5" class="footnote" rel="footnote">5</a></sup></p>
+
+<p>Repository Creation</p>
+<ul>
+  <li>Navigate to <a href="https://github.com/">Github</a> and create a repository. <strong>Name this repo <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code>.</strong> 
+<img src="https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&amp;rid=giphy.gif&amp;ct=g" alt="Github Repository gif" /></li>
+</ul>
+
+<p>Using Git Desktop, clone [your-github-name].github.io repository to your computer’s drive.</p>
+
+<h3 id="2-host-your-site">2. Host Your Site</h3>
+<p>Hosting a static website allows you to easily keep your content up to date and on a website anybody can access. We will be using Jekyll because of its popularity<sup id="fnref:6" role="doc-noteref"><a href="#fn:6" class="footnote" rel="footnote">6</a></sup>. Andrew Etter states that static websites are “really just a collection of lightweight markup files that you can edit using your favorite text editor.”<sup id="fnref:7" role="doc-noteref"><a href="#fn:7" class="footnote" rel="footnote">7</a></sup>.</p>
+<h4 id="1-ruby-install">1. Ruby Install</h4>
+<ul>
+  <li>Go to <a href="https://www.ruby-lang.org/en/documentation/installation/">Ruby’s Website</a> and follow the guide on how to get it onto your system.</li>
+  <li>Run the command: <code class="language-plaintext highlighter-rouge">ruby -v</code> to ensure ruby has been installed.
+    <h4 id="2-jekyll-install">2. Jekyll Install</h4>
+  </li>
+  <li>Then go to Jekyll’s <a href="https://jekyllrb.com/docs/">Quickstart Guide</a> and  <a href="https://jekyllrb.com/docs/installation/">Installation Guide</a> and follow the guide on how to install it for your operation system.</li>
+  <li>Run the command: <code class="language-plaintext highlighter-rouge">jekyll -v</code> to ensure Jekyll has been installed.
+    <h4 id="3-initialize-site">3. Initialize Site</h4>
+  </li>
+  <li>To start your site, use the command line to navigate to your directory containing your repository. For example: <code class="language-plaintext highlighter-rouge">cd Documents/GitHub/[your-github-name].github.io</code></li>
+  <li>Then run the command: <code class="language-plaintext highlighter-rouge">jekyll new [your-site-name]</code></li>
+  <li>Navigate into that newly created folder with: <code class="language-plaintext highlighter-rouge">cd [your-site-name]</code>
+    <ul>
+      <li>You will likely need to add <code class="language-plaintext highlighter-rouge">webrick</code>,</li>
+      <li>so run: <code class="language-plaintext highlighter-rouge">bundle add webrick</code></li>
+      <li>and run: <code class="language-plaintext highlighter-rouge">bundle install</code></li>
+    </ul>
+  </li>
+  <li>To run your newly created site: <code class="language-plaintext highlighter-rouge">bundle exec jekyll serve</code></li>
+  <li>The LocalHost will be provided to you in your terminal, open it in your web browser, and BOOM your website is now created!
+    <h4 id="4-customize">4. Customize</h4>
+  </li>
+  <li>To add your resume to the site take your <strong>resume.md</strong> file and copy it to the <code class="language-plaintext highlighter-rouge">_posts</code> folder within the <code class="language-plaintext highlighter-rouge">[your-github-name].github.io</code> folder.</li>
+  <li>You will then have to append the file name with the date in the format of <code class="language-plaintext highlighter-rouge">YYYY-MM-DD-resume.md</code></li>
+  <li>Then add to the top of your resume markdown file. This is so the Jekyll compiler can find and list your resume as a post.
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>---
+layout: post
+title:  "Resume"
+date:   [current date + time]
+categories: jekyll update
+---
+</code></pre></div>    </div>
+  </li>
+</ul>
+
+<h4 id="5-finalize">5. Finalize</h4>
+<ul>
+  <li>Then using Git Desktop, push your data to your repository and go to the URL <code class="language-plaintext highlighter-rouge">https://[your-github-name].github.io</code> and your website with your resume listed as a post will be there!</li>
+</ul>
+
+<h3 id="3-more-resources">3. More Resources</h3>
+
+<ol>
+  <li>This <a href="https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax">Markdown Tutorial</a> has helped me lots when learning Markdown.</li>
+  <li>Andrew Etter’s <em>Modern Technical Writing</em> is a good read. You can find it <a href="https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS">here</a> on Amazon.</li>
+  <li>Learning Git is essential for us Computer Science students. Although Git Desktop is easy to use and quick to learn. Learning command line Git can greatly improve your Git proficiency. <a href="https://www.atlassian.com/git/tutorials">This tutorial</a> goes very in-depth.</li>
+  <li>Using Jekyll you can apply themes to your website and make it look more appealing and customize it to your liking. Although it is not imperative to change the look, you can if you wish. Here are some resources to show you how to get these themes. <a href="https://jekyllrb.com/docs/themes/">Jekyll Docs</a>, <a href="http://jekyllthemes.org/">JekyllThemes.org</a>. You can also search through GitHub and clone repositories with themes. You will be to apply what you have learned from this README &amp; you also have the dependencies already from here to achieve this.
+    <h2 id="authors-and-acknowledgements">Authors and Acknowledgements</h2>
+  </li>
+</ol>
+
+<p><a href="https://github.com/joshsig">Josh Sigurdson</a></p>
+
+<p>Thank you to my group mates:</p>
+<ul>
+  <li><a href="https://github.com/TayRoy">Taylor Roy</a></li>
+  <li><a href="">Vedant Pulahru</a></li>
+  <li><a href="">Mansimar Bhasin</a></li>
+</ul>
+
+<p>for their help with revision of this README.</p>
+
+<p>Thank you to <a href="https://twitter.com/mdo">Mdo</a> for his creation of the templates I utilized for my personal site <a href="https://github.com/poole">Poole</a> &amp; <a href="https://github.com/poole/hyde">Hyde</a>.</p>
+
+<h2 id="faqs">FAQs</h2>
+
+<p>Q: Why is Markdown better than a word processor?</p>
+
+<p>A: Markdown is much easier to parse into the languages our web browsers display to us, like HTML and XML. A word processor, like Microsoft Word and Google Docs, do not export well to these languages. As Andrew Etter says their purpose, “is to create short, attractive PDFs that can be consumed and discarded.”<sup id="fnref:8" role="doc-noteref"><a href="#fn:8" class="footnote" rel="footnote">8</a></sup> Documentation needs to be kept in version control and updated over time without having to redistribute PDFs when something is changed or updated. Markdown gives us the flexibility to update our documentation without much effort.</p>
+
+<p>Q: Why is my resume not showing up?</p>
+
+<p>A: There can be many reasons for this. Ensure that the name of your <code class="language-plaintext highlighter-rouge">resume.md</code> file has the prefix of a previous date and time. Dates in the future will not be displayed. Also ensure the file has the correct prefix at the top of the resume.md file:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>layout: post
+title:  "Resume"
+date:   [current date + time]
+categories: jekyll update
+</code></pre></div></div>
+
+<div class="footnotes" role="doc-endnotes">
+  <ol>
+    <li id="fn:1" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 33 <a href="#fnref:1" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:2" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 39 <a href="#fnref:2" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:3" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 46 <a href="#fnref:3" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:4" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 50 <a href="#fnref:4" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:5" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 49 <a href="#fnref:5" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:6" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 51 <a href="#fnref:6" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:7" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 52 <a href="#fnref:7" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+    <li id="fn:8" role="doc-endnote">
+      <p>Andrew Etter - Modern Technical Writing, 38 <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
+    </li>
+  </ol>
+</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry></feed>
