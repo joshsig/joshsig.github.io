@@ -1,10 +1,3 @@
----
-layout: post
-title:  "Resume"
-date:   2022-10-31 11:07:34 -0500
-categories: jekyll update
----
-
 # <center> <b>Joshua Sigurdson</b> </center>
 
 #### joshuasigurdson@gmail.com 
