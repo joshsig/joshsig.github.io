@@ -6,16 +6,22 @@ How to create and host your resume on a website using a software stack consistin
  - [Instructions](#instructions)
    - [GitHub Pages](#1-github-pages)
    - [Host Your Site](#2-host-your-site)
+     - [Ruby Install](#1-ruby-install)
+     - [Jekyll Install](#2-jekyll-install)
+     - [Initialize Site](#3-initialize-site)
+     - [Customize](#4-customize)
    - [More Resources](#3-more-resources)
  - [Authors and Acknowledgements](#authors-and-acknowledgements)
  - [FAQs](#faqs)
+
+![funnies](https://programmerhumor.io/wp-content/uploads/2022/10/programmerhumor-io-debugging-memes-testing-memes-4ada90d8c3f5fce.jpg)
 
 ## Prerequisites
 We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.
 
 - Markdown Editor
     - A mark-up language is very useful to learn and use. In Andrew Etter's Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet[^1]. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used[^2]. 
-    - Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is a pretty common editor. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
+    - Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is an editor specifically for Markdown. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
     - I have provided a Markdown tutorial in [More Resources](#3-more-resources).
 
 - GitHub Account
@@ -45,21 +51,20 @@ Using Git Desktop, clone [your-github-name].github.io repository to your compute
 ### 2. Host Your Site
 Hosting a static website allows you to easily keep your content up to date and on a website anybody can access. We will be using Jekyll because of its popularity[^6]. Andrew Etter states that static websites are "really just a collection of lightweight markup files that you can edit using your favorite text editor."[^7].
 
-1. Ruby Install
+#### 1. Ruby Install
    - Go to [Ruby's Website](https://www.ruby-lang.org/en/documentation/installation/) and follow the guide on how to get it onto your system.
    - Run the command: `ruby -v` to ensure ruby has been installed.
-2. Jekyll Install
+#### 2. Jekyll Install
    - Then go to Jekyll's [Quickstart Guide](https://jekyllrb.com/docs/) and  [Installation Guide](https://jekyllrb.com/docs/installation/) and follow the guide on how to install it for your operation system.
    - Run the command: `jekyll -v` to ensure Jekyll has been installed.
-3. Initialize Site
+#### 3. Initialize Site
    - To start your site, use the command line to navigate to your directory containing your repository. For example: `cd Documents/GitHub/[your-github-name].github.io`
    - Then run the command: `jekyll new [your-site-name]`
    - Navigate into that newly created folder with: `cd [your-site-name]`
      - You will likely need to add `webrick`, so run: `bundle add webrick` and `bundle install`
    - To run your newly created site: `bundle exec jekyll serve`  
    - The LocalHost will be provided to you in your terminal, open it in your web browser, and BOOM your website is now created!
-
-4. Customize
+#### 4. Customize
    - To add your resume to the site take your **resume.md** file and copy it to the `_posts` folder within the `[your-github-name].github.io` folder.
    - You will then have to append the file name with the date in the format of `YYYY-MM-DD-resume.md`
    - Then add to the top of your resume markdown file. This is so the Jekyll compiler can find and list your resume as a post.
