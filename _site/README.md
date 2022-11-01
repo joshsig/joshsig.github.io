@@ -1,76 +1,118 @@
 # How to Host a Resume on GitHub Pages
 
-How to create and host your resume on a website using a software stack.
+How to create and host your resume on a website using a software stack consisting of Markdown, Visual Studio Code, GitHub Pages, and Jekyll.
 
-- [How to Host a Resume on GitHub Pages](#how-to-host-a-resume-on-github-pages)
-  - [Instructions](#instructions)
-    - [Configuration](#configuration)
-    - [Installation](#installation)
-  - [Create your Resume using Markdown](#create-your-resume-using-markdown)
-  - [Running Locally](#running-locally)
-  - [Settings](#settings)
-    - [Site Settings](#site-settings)
+ - [Prerequisites](#prerequisites)
+ - [Instructions](#instructions)
+   - [GitHub Pages](#1-github-pages)
+   - [Host Your Site](#2-host-your-site)
+   - [More Resources](#3-more-resources)
+ - [Authors and Acknowledgements](#authors-and-acknowledgements)
+ - [FAQs](#faqs)
 
-## Instructions
+## Prerequisites
 We will need to install a few things to achieve our goal of hosting our Resume on a website using Github Pages.
 
- - A mark-up language is very useful to learn and use. In Andrew Etter's Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet[^1]. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used[^2]. 
+- Markdown Editor
+    - A mark-up language is very useful to learn and use. In Andrew Etter's Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet[^1]. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used[^2]. 
+    - Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is an editor specifically for Markdown. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
+    - I have provided a Markdown tutorial in [More Resources](#3-more-resources).
 
- - Lets begin by installing a markdown and code editor. Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is an editor specifically for Markdown. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
+- GitHub Account
+  - You will need to have a GitHub account. Your Github will allow you to store all your code in a repository (repo) online for free! Sign up [here](https://github.com/). This will also give us access to use [GitHub Pages](https://pages.github.com/) (more on this later).
 
-![vscode](https://i.gyazo.com/7c88b6c23284d19cc2820aba69d64052.png)
+- Git & Git Desktop
+  - You will need to install [Git](https://git-scm.com/downloads).
+  - Andrew Etter prefers to use a GUI system such as this, it is better for basic everyday operations[^3]. More advanced functionality can be accessed through command line.
+  - Use [Git Desktop](https://desktop.github.com/) to connect the files on your computer to the repository. Connect your account and clone `[your-github-name].github.io` repository. This will allow you to push your data to the repo. [Reference here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) for more information on how to use Git Desktop. 
+
+- Resume in Markdown
+  - I have provided [my resume](/resume.md) for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. ![resumegif](https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif)
+
+- Ruby & Jekyll
+  - We will also need to install these to run our website. I provided instructions to get them [here](#2-host-your-site).
+
+## Instructions
+### 1. GitHub Pages
    
-You will also need a [Github account](https://github.com/)  as well as [Git Desktop](https://desktop.github.com/)! Your Github account will allow you to store all your code in a repository online for free! We can also use Git Desktop to connect the files on your computer to the repository very easily.
-![gitdesk](https://i.gyazo.com/4e7e944daa66af05f956de620d388efd.png)
+Repository Creation
+- Navigate to [Github](https://github.com/) and create a repository. **Name this repo `[your-github-name].github.io`.** 
+  ![Github Repository gif](https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&rid=giphy.gif&ct=g)
 
-Navigate to [Github](https://github.com/) and create a repository. 
+Using Git Desktop, clone [your-github-name].github.io repository to your computer's drive.
 
-![Github Repository gif](https://media2.giphy.com/media/mgL99GKm27hZLZCbUC/giphy.gif?cid=790b7611df74b65c90b2a0f82e4dd3955b804307d3958091&rid=giphy.gif&ct=g)
+### 2. Host Your Site
+Hosting a static website allows you to easily keep your content up to date and on a website anybody can access. We will be using Jekyll because of its popularity[^4]. Andrew Etter states that static websites are "really just a collection of lightweight markup files that you can edit using your favorite text editor."[^5].
 
-Open Git Desktop and clone this newly created repository. Using Git Desktop we can now keep our 
+1. Ruby Install
+   - Go to [Ruby's Website](https://www.ruby-lang.org/en/documentation/installation/) and follow the guide on how to get it onto your system.
+   - Run the command: `ruby -v` to ensure ruby has been installed.
+2. Jekyll Install
+   - Then go to Jekyll's [Quickstart Guide](https://jekyllrb.com/docs/) and  [Installation Guide](https://jekyllrb.com/docs/installation/) and follow the guide on how to install it for your operation system.
+   - Run the command: `jekyll -v` to ensure Jekyll has been installed.
+3. Initialize Site
+   - To start your site, use the command line to navigate to your directory containing your repository. For example: `cd Documents/GitHub/[your-github-name].github.io`
+   - Then run the command: `jekyll new [your-site-name]`
+   - Navigate into that newly created folder with: `cd [your-site-name]`
+     - You will likely need to add `webrick`, so run: `bundle add webrick` and `bundle install`
+   - To run your newly created site: `bundle exec jekyll serve`  
+   - The LocalHost will be provided to you in your terminal, open it in your web browser, and BOOM your website is now created!
 
- ### Configuration
-Create a folder in your documents, entitle it `GitHub`. We will use this folder to keep our files for this project up to date and hosted via GitHub Pages. Using Git Desktop
-
-### Installation
- - We will need to use the command line to install some dependencies for hosting our website. We are going to need Jekyll to host our website, and in order to get Jekyll we need Ruby (the language Jekyll is written in).
-   - Install/Upgrade [Ruby](https://www.ruby-lang.org/en/documentation/installation/) 
-
-   Run `ruby -v` in the command line to ensure ruby has been installed on your system.
-   ![terminal](https://media3.giphy.com/media/gRXfpvxvkci5rswwjG/giphy.gif?cid=790b76116c94727531e16c3620ddc2d7b72f8e665ec43815&rid=giphy.gif&ct=g)
-
-   Follow set-up instructions for [Jekyll](https://jekyllrb.com/docs/installation/) and [Bundler](https://jekyllrb.com/docs/ruby-101/#gems)
-
-Install Jekyll: 
-  ``` 
-  gem install jekyll bundler
-  ``` 
-
-
-
-## Create your Resume using Markdown
-
-Familiarity with Markdown is needed to create a resume. Markdown is an easy-to-read, easy-to-write language for formatting plain text. I will be using GitHub Flavoured Markdown so it will pair well with our usage of GitHub. If you are unfamiliar with Markdown reference [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for basic syntax.
-
-Using Visual Studio Code, open a folder and create a new file. Name this file `resume.md`. Now that you have created a markdown file you have the ability to start writing your resumaccounte! Add your name, experience, education, etc. until you have a resume you want to share with the world! Reference [here](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) for any formatting needs.
-
-## Running Locally
-Compile and run your `Jekyll` website.
-1. Ensure jekyll is installed: `jekyll -v`
-2. Create your jekyll site: `jekyll new my-resume-site`
-3. Navigate to the folder: `cd my-resume-site`
-4. To host your website on your local network run, `bundle exec jekyll serve`
-
-## Settings
-You will want to customize the `_config.yml` to your own information.
-### Site Settings
+4. Customize
+   - To add your resume to the site take your **resume.md** file and copy it to the `_posts` folder within the `[your-github-name].github.io` folder.
+   - You will then have to append the file name with the date in the format of `YYYY-MM-DD-resume.md`
+   - Then add to the top of your resume markdown file. This is so the Jekyll compiler can find and list your resume as a post.
 ```
-title: Your awesome title
-email: your-email@example.com
-description: your-description
-twitter_username: your-twitter-username
-github_username:  your-github
+---
+layout: post
+title:  "Resume"
+date:   [current date + time]
+categories: jekyll update
+---
 ```
+
+5. Finalize
+   - Then using Git Desktop, push your data to your repository and go to the URL `https://[your-github-name].github.io` and your website with your resume listed as a post will be there! 
+
+### 3. More Resources
+
+1. This [Markdown Tutorial](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax) has helped me lots when learning Markdown.
+2. Andrew Etter's *Modern Technical Writing* is a good read. You can find it [here](https://www.amazon.com/Modern-Technical-Writing-Introduction-Documentation-ebook/dp/B01A2QL9SS) on Amazon.
+3. Learning Git is essential for us Computer Science students. Although Git Desktop is easy to use and quick to learn. Learning command line Git can greatly improve your Git proficiency. [This tutorial](https://www.atlassian.com/git/tutorials) goes very indepth.
+
+## Authors and Acknowledgements
+
+[Josh Sigurdson](https://github.com/joshsig)
+
+Thank you to my group mates:
+- [x]()
+- [y]()
+  
+for their help with revision of this README.
+
+Thank you to [Mdo](https://twitter.com/mdo) for his creation of the templates I utilized for my personal site [Poole](https://github.com/poole) & [Hyde](https://github.com/poole/hyde).
+
+
+## FAQs
+
+Q: Why is Markdown better than a word processor?
+
+A: 
+
+Q: Why is my resume not showing up?
+
+A: There can be many reasons for this. Ensure that the name of your `resume.md` file has the prefix of a previous date and time. Dates in the future will not be displayed. Also ensure the file has the correct prefix:
+```
+layout: post
+title:  "Resume"
+date:   [current date + time]
+categories: jekyll update
+```
+
+-----
 
 [^1]: Andrew Etter - Modern Technical Writing, 33
 [^2]: Andrew Etter - Modern Technical Writing, 39
+[^3]: Andrew Etter - Modern Technical Writing, 46
+[^4]: Andrew Etter - Modern Technical Writing, 51
+[^5]: Andrew Etter - Modern Technical Writing, 52

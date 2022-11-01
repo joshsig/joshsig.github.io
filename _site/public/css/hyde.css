@@ -55,6 +55,7 @@ html {
 
 .sidebar {
   text-align: left;
+  text-decoration: none;
   padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
@@ -73,6 +74,7 @@ html {
 /* Sidebar links */
 .sidebar a {
   color: #fff;
+  text-decoration: none;
 }
 
 /* About section 

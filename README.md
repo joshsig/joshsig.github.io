@@ -27,7 +27,7 @@ We will need to install a few things to achieve our goal of hosting our Resume o
   - Use [Git Desktop](https://desktop.github.com/) to connect the files on your computer to the repository. Connect your account and clone `[your-github-name].github.io` repository. This will allow you to push your data to the repo. [Reference here](https://docs.github.com/en/desktop/installing-and-configuring-github-desktop/overview/getting-started-with-github-desktop) for more information on how to use Git Desktop. 
 
 - Resume in Markdown
-  - I have provided [my resume](A2/resume.md) for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. ![resumegif](https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif)
+  - I have provided [my resume](/resume.md) for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. ![resumegif](https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif)
 
 - Ruby & Jekyll
   - We will also need to install these to run our website. I provided instructions to get them [here](#2-host-your-site).
@@ -109,6 +109,7 @@ date:   [current date + time]
 categories: jekyll update
 ```
 
+-----
 
 [^1]: Andrew Etter - Modern Technical Writing, 33
 [^2]: Andrew Etter - Modern Technical Writing, 39
