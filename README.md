@@ -92,8 +92,8 @@ categories: jekyll update
 
 Thank you to my group mates:
 - [Taylor Roy](https://github.com/TayRoy)
-- [Vedant Pulahru]()
-- [Mansimar Bhasin]()
+- [Vedant Pulahru](https://github.com/vedant1206)
+- [Mansimar Bhasin](https://github.com/mansimars)
   
 for their help with revision of this README.
 
