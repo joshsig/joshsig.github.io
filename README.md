@@ -15,7 +15,7 @@ We will need to install a few things to achieve our goal of hosting our Resume o
 
 - Markdown Editor
     - A mark-up language is very useful to learn and use. In Andrew Etter's Modern Technical Writing, he presses the importance of using a mark-up language to easily create XML that can then be shared with the world through Internet[^1]. I will be using Markdown out of all the possible mark-up languages because of it is the most widely used[^2]. 
-    - Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is an editor specifically for Markdown. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
+    - Personally I like to use [VS Code](https://code.visualstudio.com/download), you can use it to write Markdown and program your site as well. You can use any editor of your choice although. [Atom](https://atom.io/) is a pretty common editor. [Vim](https://vimhelp.org/) is an option for Markdown as well a code, not for the faint of heart.
     - I have provided a Markdown tutorial in [More Resources](#3-more-resources).
 
 - GitHub Account
@@ -27,7 +27,7 @@ We will need to install a few things to achieve our goal of hosting our Resume o
   - Andrew Etter prefers to use a GUI system such as this, it is better for basic everyday operations[^3]. More advanced functionality can be accessed through command line.
 
 - Resume in Markdown
-  - I have provided [my resume](A2/resume.md) for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. ![resumegif](https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif)
+  - I have provided [my resume](/resume.md) for use in this repository. You can edit it using Visual Studio Code to your own resume by changing my information, education, and experience. ![resumegif](https://media0.giphy.com/media/72YyXcnj0DVZzVaF2d/giphy.gif)
 
 - Ruby & Jekyll
   - We will also need to install these to run our website. I provided instructions to get them [here](#2-host-your-site).
