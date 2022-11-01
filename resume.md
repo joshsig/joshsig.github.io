@@ -15,7 +15,7 @@ categories: jekyll update
 ---
 
 ## <b>About me</b>
-Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning, with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.
+Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.
 
 ---
 ## <b>Technical Skills</b>
