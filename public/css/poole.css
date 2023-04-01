@@ -46,7 +46,6 @@ body {
   background-color: #313131;
   margin: 0;
   padding: 0;
-  margin-left: 9rem;
 }
 
 html {
@@ -304,9 +303,14 @@ tbody tr:nth-child(odd) th {
   max-width: 38rem;
   padding-left:  1rem;
   padding-right: 1rem;
-  margin-left:  auto;
-  margin-right: auto;
+  margin-left: 40vw;
   background-color: #313131;
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    margin-left:  0;
+  }
 }
 
 

@@ -1,145 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2022-12-08T16:23:35-06:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Josh Sig</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">Resume</title><link href="http://localhost:4000/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
-
-<h4 id="joshuasigurdsongmailcom">joshuasigurdson@gmail.com</h4>
-
-<h4 id="sigurd35myumanitobaca">sigurd35@myumanitoba.ca</h4>
-
-<h4 id="1-204-509-1337">+1 (204) 509-1337</h4>
-
-<h4 id="githubcomjoshsig"><a href="https://github.com/joshsig">Github.com/joshsig</a></h4>
-
-<hr />
-
-<h2 id="about-me"><b>About me</b></h2>
-
-<p>Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.</p>
-
-<hr />
-
-<h2 id="technical-skills"><b>Technical Skills</b></h2>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center">Languages &amp; Frameworks</th>
-      <th style="text-align: center">Tools &amp; Technologies</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Java</td>
-      <td style="text-align: center">JetBrains Ecosystem</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Python</td>
-      <td style="text-align: center">Vim</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">C</td>
-      <td style="text-align: center">Git</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">JavaScript</td>
-      <td style="text-align: center">CSS/SCSS</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Assembly</td>
-      <td style="text-align: center">HTML</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Vue.js</td>
-      <td style="text-align: center">Markdown</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">React</td>
-      <td style="text-align: center">Node.js</td>
-    </tr>
-  </tbody>
-</table>
-
-<hr />
-
-<h2 id="education"><b>Education</b></h2>
-
-<h3 id="university-of-manitoba--winnipeg-manitoba"><b>University of Manitoba</b> // Winnipeg, Manitoba</h3>
-
-<ul>
-  <li>2018 - Current
-    <ul>
-      <li>Currently enrolled in the Faculty of Science, Majoring in Computer Science with a Minor in Management. (Expect June 2024)</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="j-h-bruns-collegiate--winnipeg-manitoba"><b>J. H Bruns Collegiate</b> // Winnipeg, Manitoba</h3>
-
-<ul>
-  <li>Honour Roll in grades 9 through 12</li>
-  <li>Academic Excellence</li>
-</ul>
-
-<hr />
-
-<h2 id="experience"><b>Experience</b></h2>
-
-<h3 id="bartender-at-earls-kitchen--bar--300-main-street-winnipeg-manitoba"><b>Bartender at Earls Kitchen + Bar</b> // 300 Main Street, Winnipeg, Manitoba</h3>
-
-<ul>
-  <li>2018 - Current
-    <ul>
-      <li>Ensuring consistency of customer experience.</li>
-      <li>Planning and preparing for customer traffic.</li>
-      <li>Entrusted with the health and safety of customers and associates.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="sale-associate-at-blackwell-shoes--st-vital-mall-winnipeg-manitoba"><b>Sale Associate at Blackwell Shoes</b> // St Vital Mall, Winnipeg, Manitoba</h3>
-
-<ul>
-  <li>2017 - 2018
-    <ul>
-      <li>Education and sale of appropriate products for customers.</li>
-      <li>Inventory accuracy and organization of storage.</li>
-      <li>Ensuring cleanliness and safety of the store front.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="guest-experience-leader-at-mcdonalds--65-vermillion-road-winnipeg-manitoba"><b>Guest Experience Leader at McDonald’s</b> // 65 Vermillion Road, Winnipeg, Manitoba</h3>
-
-<ul>
-  <li>2015 - 2017
-    <ul>
-      <li>Supporting customer experience with new interactive kiosks.</li>
-      <li>Efficiency and accuracy of high volume of orders.</li>
-      <li>Ensuring cleanliness and safety of facilities and restaurant.</li>
-    </ul>
-  </li>
-</ul>
-
-<h3 id="various-acting-roles--film-commerical"><b>Various Acting Roles</b> // Film, Commerical</h3>
-
-<ul>
-  <li>2010 - 2015
-    <ul>
-      <li>The Middles - Principle Actor, Prarie Kid Productions</li>
-      <li>Manitoba Teachers Society Commerical, - Lead Actor, Now Communications</li>
-      <li>Home Alone 5 - Photo Double and Stand-in, Pete Hewitt</li>
-    </ul>
-  </li>
-</ul>
-
-<hr />
-
-<h2 id="references"><b>References</b></h2>
-
-<ul>
-  <li>Brenda Bourns - (204) 960-3774</li>
-  <li>Inna Granovsky - (204) 990-3616</li>
-  <li>Jeff McWhinney - (204) 583-8193</li>
-  <li>Kevin Dzioba - (204) 890-7099</li>
-</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Joshua Sigurdson]]></summary></entry><entry><title type="html">README</title><link href="http://localhost:4000/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T11:07:34-05:00</published><updated>2022-10-31T11:07:34-05:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.1">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2023-03-31T23:05:50-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Josh Sig</title><subtitle>Computer Science &amp; Management student at University of Manitoba!</subtitle><entry><title type="html">README</title><link href="http://localhost:4000/jekyll/update/2022/10/31/README.html" rel="alternate" type="text/html" title="README" /><published>2022-10-31T09:07:34-07:00</published><updated>2022-10-31T09:07:34-07:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/README</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/README.html"><![CDATA[<h1 id="how-to-host-a-resume-on-github-pages">How to Host a Resume on GitHub Pages</h1>
 
 <p>How to create and host your resume on a website using a software stack consisting of Markdown, Visual Studio Code, GitHub Pages, and Jekyll.</p>
 
@@ -324,4 +183,145 @@ categories: jekyll update
       <p>Andrew Etter - Modern Technical Writing, 38 <a href="#fnref:8" class="reversefootnote" role="doc-backlink">&#8617;</a></p>
     </li>
   </ol>
-</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry></feed>
+</div>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[How to Host a Resume on GitHub Pages]]></summary></entry><entry><title type="html">Resume</title><link href="http://localhost:4000/jekyll/update/2022/10/31/resume.html" rel="alternate" type="text/html" title="Resume" /><published>2022-10-31T09:07:34-07:00</published><updated>2022-10-31T09:07:34-07:00</updated><id>http://localhost:4000/jekyll/update/2022/10/31/resume</id><content type="html" xml:base="http://localhost:4000/jekyll/update/2022/10/31/resume.html"><![CDATA[<h1 id="-joshua-sigurdson-"><center> <b>Joshua Sigurdson</b> </center></h1>
+
+<h4 id="joshuasigurdsongmailcom">joshuasigurdson@gmail.com</h4>
+
+<h4 id="sigurd35myumanitobaca">sigurd35@myumanitoba.ca</h4>
+
+<h4 id="1-204-509-1337">+1 (204) 509-1337</h4>
+
+<h4 id="githubcomjoshsig"><a href="https://github.com/joshsig">Github.com/joshsig</a></h4>
+
+<hr />
+
+<h2 id="about-me"><b>About me</b></h2>
+
+<p>Energetic, enthusiastic, and inquisitive University of Manitoba Computer Science Student from Winnipeg, Manitoba, Canada! While Demonstrating strong analytical reasoning with strong leadership qualities. I am constantly striving to further my education in a wide range of fields, such as computer science, physics, astronomy, finance, and history.</p>
+
+<hr />
+
+<h2 id="technical-skills"><b>Technical Skills</b></h2>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center">Languages &amp; Frameworks</th>
+      <th style="text-align: center">Tools &amp; Technologies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Java</td>
+      <td style="text-align: center">JetBrains Ecosystem</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Python</td>
+      <td style="text-align: center">Vim</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">C</td>
+      <td style="text-align: center">Git</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">JavaScript</td>
+      <td style="text-align: center">CSS/SCSS</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Assembly</td>
+      <td style="text-align: center">HTML</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Vue.js</td>
+      <td style="text-align: center">Markdown</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">React</td>
+      <td style="text-align: center">Node.js</td>
+    </tr>
+  </tbody>
+</table>
+
+<hr />
+
+<h2 id="education"><b>Education</b></h2>
+
+<h3 id="university-of-manitoba--winnipeg-manitoba"><b>University of Manitoba</b> // Winnipeg, Manitoba</h3>
+
+<ul>
+  <li>2018 - Current
+    <ul>
+      <li>Currently enrolled in the Faculty of Science, Majoring in Computer Science with a Minor in Management. (Expect June 2024)</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="j-h-bruns-collegiate--winnipeg-manitoba"><b>J. H Bruns Collegiate</b> // Winnipeg, Manitoba</h3>
+
+<ul>
+  <li>Honour Roll in grades 9 through 12</li>
+  <li>Academic Excellence</li>
+</ul>
+
+<hr />
+
+<h2 id="experience"><b>Experience</b></h2>
+
+<h3 id="bartender-at-earls-kitchen--bar--300-main-street-winnipeg-manitoba"><b>Bartender at Earls Kitchen + Bar</b> // 300 Main Street, Winnipeg, Manitoba</h3>
+
+<ul>
+  <li>2018 - Current
+    <ul>
+      <li>Ensuring consistency of customer experience.</li>
+      <li>Planning and preparing for customer traffic.</li>
+      <li>Entrusted with the health and safety of customers and associates.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="sale-associate-at-blackwell-shoes--st-vital-mall-winnipeg-manitoba"><b>Sale Associate at Blackwell Shoes</b> // St Vital Mall, Winnipeg, Manitoba</h3>
+
+<ul>
+  <li>2017 - 2018
+    <ul>
+      <li>Education and sale of appropriate products for customers.</li>
+      <li>Inventory accuracy and organization of storage.</li>
+      <li>Ensuring cleanliness and safety of the store front.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="guest-experience-leader-at-mcdonalds--65-vermillion-road-winnipeg-manitoba"><b>Guest Experience Leader at McDonald’s</b> // 65 Vermillion Road, Winnipeg, Manitoba</h3>
+
+<ul>
+  <li>2015 - 2017
+    <ul>
+      <li>Supporting customer experience with new interactive kiosks.</li>
+      <li>Efficiency and accuracy of high volume of orders.</li>
+      <li>Ensuring cleanliness and safety of facilities and restaurant.</li>
+    </ul>
+  </li>
+</ul>
+
+<h3 id="various-acting-roles--film-commerical"><b>Various Acting Roles</b> // Film, Commerical</h3>
+
+<ul>
+  <li>2010 - 2015
+    <ul>
+      <li>The Middles - Principle Actor, Prarie Kid Productions</li>
+      <li>Manitoba Teachers Society Commerical, - Lead Actor, Now Communications</li>
+      <li>Home Alone 5 - Photo Double and Stand-in, Pete Hewitt</li>
+    </ul>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="references"><b>References</b></h2>
+
+<ul>
+  <li>Brenda Bourns - (204) 960-3774</li>
+  <li>Inna Granovsky - (204) 990-3616</li>
+  <li>Jeff McWhinney - (204) 583-8193</li>
+  <li>Kevin Dzioba - (204) 890-7099</li>
+</ul>]]></content><author><name></name></author><category term="jekyll" /><category term="update" /><summary type="html"><![CDATA[Joshua Sigurdson]]></summary></entry></feed>
