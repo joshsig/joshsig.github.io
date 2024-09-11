@@ -304,7 +304,6 @@ tbody tr:nth-child(odd) th {
   padding-left:  1rem;
   padding-right: 1rem;
   margin-left: 40vw;
-  background-color: #313131;
 }
 
 @media screen and (max-width: 900px) {
